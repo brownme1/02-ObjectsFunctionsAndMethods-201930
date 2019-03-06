@@ -3,8 +3,8 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Morgan Brown.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # TODO: 2.
@@ -18,17 +18,26 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 def main():
-    """
+    run_test_hypotenuse()
+    #turtle_things('blue', 4)
+
+
+def run_test_hypotenuse():
+    answer = hypotenuse(3, 4)
+    print(answer)
+
+def hypotenuse(x,y):
+    return(math.sqrt(x**2+y**2))
+
+    """"
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
-
-
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# DONE: 3a.  Define a function immediately below this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -36,14 +45,14 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
 
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -65,10 +74,45 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONE: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+
+def main():
+    Pets()
+    Moving()
+
+
+def Pets():
+    thickness = 3
+    color = 'blue'
+
+    cat = rg.SimpleTurtle()
+    cat.pen = rg.Pen('green', thickness)
+
+    dog = rg.SimpleTurtle()
+    dog.pen = rg.Pen(color,5)
+
+    cat.forward(100)
+    dog.backward(100)
+
+def Moving(color, thickness):
+    window = rg.TurtleWindow()
+    window.delay(20)
+
+    simple1 = rg.SimpleTurtle()
+    simple1.pen = rg.Pen('green',thickness)
+
+    simple2 = rg.SimpleTurtle()
+    simple2.Pen = rg.Pen(color,5)
+
+    simple1.forward(100)
+    simple2.backward(100)
+
+    window.close_on_mouse_click()
 
 
 ###############################################################################
