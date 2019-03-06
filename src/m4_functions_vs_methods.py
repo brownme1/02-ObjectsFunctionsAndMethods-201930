@@ -140,7 +140,7 @@ def try_methods():
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
-    Turtle = rg.SimpleTurtle
+    Turtle = rg.SimpleTurtle()
     Turtle.pen = rg.Pen('brown', 5)
     Turtle.forward(150)
     Turtle.left(90)
