@@ -2,8 +2,8 @@
 This module lets you experience the POWER of FUNCTIONS and PARAMETERS.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Morgan Brown.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -29,7 +29,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   First, RUN this program.  You will see that it draws concentric circles
 #   whose radii vary by 15.
 #
@@ -144,7 +144,7 @@ def better_draw_circles(point):
 
 
 ###############################################################################
-# TODO: 4a.
+# DONE : 4a.
 #   In the previous _TODO_, you made a MORE POWERFUL version
 #   of   draw_circles   by introducing a PARAMETER for the amount
 #   by which the radii of the concentric circles increase.

@@ -136,7 +136,7 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
@@ -157,8 +157,8 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
-    ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    ####NE#######################################################################
+    # DO: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -213,6 +213,29 @@ def try_methods_and_functions():
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
+    Turtle = rg.SimpleTurtle()
+
+    Turtle.pen = rg.Pen('blue', 5)
+    Turtle.backward(150)
+    Turtle.speed = 1
+    draw_many_squares(Turtle, 2, 100, 30)
+
+    Turtle.pen = rg.Pen('red', 5)
+    Turtle.speed = 5
+    draw_many_squares(Turtle, 10, 50, 15)
+
+    Turtle.pen = rg.Pen('red', 35)
+    Turtle.speed = 100
+    draw_many_squares(Turtle, 8, 300, 60)
+
+    New = rg.SimpleTurtle()
+    New.pen = rg.Pen('black', 3)
+    New.backward(200)
+    New.draw_circle(30)
+    New.draw_square(50)
+
+
+
 
 
 # -----------------------------------------------------------------------------
